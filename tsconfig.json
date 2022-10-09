@@ -3,6 +3,8 @@
 		"incremental": true,
 		"target": "es5",
 		"module": "commonjs",
+		"lib": ["es2017", "es7", "es6", "dom"],
+		"strict": true,
 		"declaration": true,
 		"outDir": "lib",
 		"esModuleInterop": true,
@@ -10,5 +12,6 @@
 		"forceConsistentCasingInFileNames": true
 	},
 	"include": ["src/**/*"],
+	"exclude": ["node_modules", "lib"],
 	"compileOnSave": true
 }

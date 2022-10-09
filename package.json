@@ -8,8 +8,21 @@
 	"scripts": {
 		"build": "tsc"
 	},
-	"keywords": [],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/lewisjr/fstring.git"
+	},
+	"keywords": [
+		"abbreviate",
+		"title",
+		"string",
+		"sentence"
+	],
 	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/lewisjr/fstring/issues"
+	},
+	"homepage": "https://github.com/lewisjr/fstring",
 	"devDependencies": {
 		"@types/node": "^18.8.3",
 		"typescript": "^4.8.4"

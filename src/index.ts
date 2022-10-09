@@ -1,8 +1,10 @@
 /**
  * Make an abbreviation from a string.
- * @param txt is any string, it will be split with a space  ```" "``` if no delimiter is provided.
- * @param delimiter is the char/string that differentiates one word from another.
- * @returns a string of upper case initials
+ *
+ * ```@param txt``` is any string, it will be split with a space  ```" "``` if no delimiter is provided.
+ *
+ * ```@param delimiter``` is the char/string that differentiates one word from another.
+ * @returns an uppercased abbreviation of the string
  */
 export const abbreviate = (txt: string, delimiter?: string): string => {
 	let delim = " ";
@@ -22,9 +24,11 @@ export const abbreviate = (txt: string, delimiter?: string): string => {
 };
 
 /**
- * Make a string title case
- * @param txt the string to title
- * @param delimiter is the char/string that differentiates one word from another.
+ * Make a string title case.
+ *
+ * ```@param txt``` the string to title
+ *
+ * ```@param delimiter``` is the char/string that differentiates one word from another.
  * @returns a title cased string
  */
 export const toTitleCase = (txt: string, delimiter?: string): string => {
@@ -45,9 +49,10 @@ export const toTitleCase = (txt: string, delimiter?: string): string => {
 };
 
 /**
- * Make a string sentence case
- * @param txt the text to title
- * @returns a title cased string
+ * Make a string sentence case.
+ *
+ * ```@param txt``` the text to title
+ * @returns a sentence cased string
  */
 export const toSentenceCase = (txt: string): string => {
 	const text = txt.toLowerCase();
