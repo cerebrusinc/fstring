@@ -1,0 +1,17 @@
+{
+	"name": "@techtronics/fstring",
+	"version": "0.1.0",
+	"description": "This brings Python string manipulation to js!",
+	"author": "Lewis Mosho Junior <mrmoshojr@gmail.com>",
+	"main": "lib/index.js",
+	"types": "lib/index.d.ts",
+	"scripts": {
+		"build": "tsc"
+	},
+	"keywords": [],
+	"license": "MIT",
+	"devDependencies": {
+		"@types/node": "^18.8.3",
+		"typescript": "^4.8.4"
+	}
+}
