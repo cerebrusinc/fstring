@@ -51,10 +51,11 @@ Make an **abbreviation** of a string; Usually used for names. It returns a capit
 <details>
 <summary><strong>Params</strong></summary>
 
-| Parameter | Default Setting       | Required? | Definition                                                 |
-| --------- | --------------------- | --------- | ---------------------------------------------------------- |
-| txt       | null                  | Yes       | The string you wish to abbreviate                          |
-| delimiter | a single space: `" "` | No        | The character or string that seperates words in the string |
+| Parameter | Default Setting | Required? | Definition                                                  |
+| --------- | --------------- | --------- | ----------------------------------------------------------- |
+| txt       | `null`          | Yes       | The string you wish to abbreviate                           |
+| delimiter | `" "`           | No        | The character or string that seperates words in the string  |
+| reverse   | `false`         | No        | An option to enable you to request a reversed return string |
 
 </details>
 
@@ -65,10 +66,10 @@ Make any string **title cased**. it returns a string in which every first letter
 <details>
 <summary><strong>Params</strong></summary>
 
-| Parameter | Default Setting       | Required? | Definition                                                 |
-| --------- | --------------------- | --------- | ---------------------------------------------------------- |
-| txt       | null                  | Yes       | The string you wish to change to title case                |
-| delimiter | a single space: `" "` | No        | The character or string that seperates words in the string |
+| Parameter | Default Setting | Required? | Definition                                                 |
+| --------- | --------------- | --------- | ---------------------------------------------------------- |
+| txt       | `null`          | Yes       | The string you wish to change to title case                |
+| delimiter | `" "`           | No        | The character or string that seperates words in the string |
 
 </details>
 
@@ -86,10 +87,10 @@ It returns a string in which every first letter of the first word of a sentence 
 <details>
 <summary><strong>Params</strong></summary>
 
-| Parameter | Default Setting       | Required? | Definition                                                 |
-| --------- | --------------------- | --------- | ---------------------------------------------------------- |
-| txt       | null                  | Yes       | The string you wish to change to sentence case             |
-| delimiter | a single space: `" "` | No        | The character or string that seperates words in the string |
+| Parameter | Default Setting | Required? | Definition                                                 |
+| --------- | --------------- | --------- | ---------------------------------------------------------- |
+| txt       | `null`          | Yes       | The string you wish to change to sentence case             |
+| delimiter | `" "`           | No        | The character or string that seperates words in the string |
 
 </details>
 
@@ -98,6 +99,13 @@ It returns a string in which every first letter of the first word of a sentence 
 ## v0.1.x
 
 <details open>
+<summary><strong>v0.1.2</strong></summary>
+
+- Added the option to have the abbreviation reverse or not before return
+
+</details>
+
+<details>
 <summary><strong>v0.1.1</strong></summary>
 
 - Type hint updates

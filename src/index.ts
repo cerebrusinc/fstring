@@ -3,17 +3,28 @@
  *
  * @param txt the string you wish to abbreviate
  * @param delimiter is the char/string that differentiates one word from another
+ * @param reverse a boolean option to reverse the return string
  * @returns an uppercased abbreviation of the string
  */
-export const abbreviate = (txt: string, delimiter?: string): string => {
+export const abbreviate = (
+	txt: string,
+	delimiter?: string,
+	reverse?: boolean
+): string => {
 	const delim = delimiter ? delimiter : " ";
 
 	const txtArr = txt.split(delim);
 	let initials: string = "";
 
-	txtArr
-		.reverse()
-		.map((name) => (initials += name.substring(0, 1).toUpperCase()));
+	switch (reverse) {
+		case true:
+			txtArr
+				.reverse()
+				.map((name) => (initials += name.substring(0, 1).toUpperCase()));
+			break;
+		default:
+			txtArr.map((name) => (initials += name.substring(0, 1).toUpperCase()));
+	}
 
 	return initials;
 };
