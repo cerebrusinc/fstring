@@ -6,21 +6,19 @@ This package brings some Python string formatting to Javascript! Currently you c
 - Make a string sentence case
 - Make a string title case
 
-As of now, it realises `.`, `;`, `!`, and `?` as **sentence** delimiters.
-
 # Importing
 
 ```javascript
 // ES6 Module
 import * as fstring from "@techtronics/fstring";
 
-// ES6 Destructing
+// ES6 Destructuring
 import { abbreviate, toTitleCase, toSentenceCase } from "@techtronics/fstring";
 
 // ES5 Module
 const fstring = require("@techtronics/fstring");
 
-// ES5 Destructing
+// ES5 Destructuring
 const {
 	abbreviate,
 	toTitleCase,
@@ -43,3 +41,75 @@ console.log(toTitleCase(name));
 console.log(abbreviate(name));
 // LMJ
 ```
+
+# Functions
+
+## abbreviate
+
+Make an **abbreviation** of a string; Usually used for names. It returns a capital case abbreviation of the string.
+
+<details>
+<summary><strong>Params</strong></summary>
+
+| Parameter | Default Setting       | Required? | Definition                                                 |
+| --------- | --------------------- | --------- | ---------------------------------------------------------- |
+| txt       | null                  | Yes       | The string you wish to abbreviate                          |
+| delimiter | a single space: `" "` | No        | The character or string that seperates words in the string |
+
+</details>
+
+## toTitleCase
+
+Make any string **title cased**. it returns a string in which every first letter of a word is upper cased with the rest being lower cased.
+
+<details>
+<summary><strong>Params</strong></summary>
+
+| Parameter | Default Setting       | Required? | Definition                                                 |
+| --------- | --------------------- | --------- | ---------------------------------------------------------- |
+| txt       | null                  | Yes       | The string you wish to change to title case                |
+| delimiter | a single space: `" "` | No        | The character or string that seperates words in the string |
+
+</details>
+
+## toSentenceCase
+
+Make any string **sentence cased**; The current sentence delimiters are:
+
+- `.`
+- `;`
+- `!`
+- `?`
+
+It returns a string in which every first letter of the first word of a sentence is capitalised, with the reaminder of the senter being lower cased.
+
+<details>
+<summary><strong>Params</strong></summary>
+
+| Parameter | Default Setting       | Required? | Definition                                                 |
+| --------- | --------------------- | --------- | ---------------------------------------------------------- |
+| txt       | null                  | Yes       | The string you wish to change to sentence case             |
+| delimiter | a single space: `" "` | No        | The character or string that seperates words in the string |
+
+</details>
+
+# Changelog
+
+## v0.1.x
+
+<details open>
+<summary><strong>v0.1.1</strong></summary>
+
+- Type hint updates
+- README restructuring
+- toSentenceCase now supports custom delimiters 😎
+
+</details>
+
+<details>
+<summary><strong>v0.1.0</strong></summary>
+
+- Initial release
+- Sentence casing, title casing, and abrreviations added and typed
+
+</details>

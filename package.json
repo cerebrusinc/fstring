@@ -1,6 +1,6 @@
 {
 	"name": "@techtronics/fstring",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "This brings Python string manipulation to js!",
 	"author": "Lewis Mosho Junior <mrmoshojr@gmail.com>",
 	"main": "lib/index.js",

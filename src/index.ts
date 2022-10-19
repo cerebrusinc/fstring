@@ -1,24 +1,19 @@
 /**
  * Make an abbreviation from a string.
  *
- * ```@param txt``` is any string, it will be split with a space  ```" "``` if no delimiter is provided.
- *
- * ```@param delimiter``` is the char/string that differentiates one word from another.
+ * @param txt the string you wish to abbreviate
+ * @param delimiter is the char/string that differentiates one word from another
  * @returns an uppercased abbreviation of the string
  */
 export const abbreviate = (txt: string, delimiter?: string): string => {
-	let delim = " ";
-
-	if (delimiter) {
-		delim = delimiter;
-	}
+	const delim = delimiter ? delimiter : " ";
 
 	const txtArr = txt.split(delim);
 	let initials: string = "";
 
 	txtArr
 		.reverse()
-		.map(name => (initials += name.substring(0, 1).toUpperCase()));
+		.map((name) => (initials += name.substring(0, 1).toUpperCase()));
 
 	return initials;
 };
@@ -26,17 +21,12 @@ export const abbreviate = (txt: string, delimiter?: string): string => {
 /**
  * Make a string title case.
  *
- * ```@param txt``` the string to title
- *
- * ```@param delimiter``` is the char/string that differentiates one word from another.
+ * @param txt the string to title case
+ * @param delimiter is the char/string that differentiates one word from another
  * @returns a title cased string
  */
 export const toTitleCase = (txt: string, delimiter?: string): string => {
-	let delim = " ";
-
-	if (delimiter) {
-		delim = delimiter;
-	}
+	const delim = delimiter ? delimiter : " ";
 
 	const text = txt.toLowerCase();
 	const txtArr = text.split(delim);
@@ -51,12 +41,14 @@ export const toTitleCase = (txt: string, delimiter?: string): string => {
 /**
  * Make a string sentence case.
  *
- * ```@param txt``` the text to title
+ * @param txt the text to title
+ * @param delimiter  is the char/string that differentiates one word from another
  * @returns a sentence cased string
  */
-export const toSentenceCase = (txt: string): string => {
+export const toSentenceCase = (txt: string, delimiter?: string): string => {
+	const delim = delimiter ? delimiter : " ";
 	const text = txt.toLowerCase();
-	const txtArr = text.split(" ");
+	const txtArr = text.split(delim);
 
 	const whitelist = [".", "!", "?", ";"];
 
