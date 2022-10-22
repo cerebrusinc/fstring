@@ -99,6 +99,13 @@ It returns a string in which every first letter of the first word of a sentence 
 ## v0.1.x
 
 <details open>
+<summary><strong>v0.1.3</strong></summary>
+
+- Fixed missing build and type annotations
+
+</details>
+
+<details>
 <summary><strong>v0.1.2</strong></summary>
 
 - Added the option to have the abbreviation reverse or not before return
