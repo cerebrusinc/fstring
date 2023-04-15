@@ -1,3 +1,7 @@
+<p align="center">
+    <img src="https://drive.google.com/uc?id=1DZEqZQlyfzhFxHS3LI82k_saQkOBerf8" alt="py-qol logo" width="250" height="250" />
+</p>
+
 # fstring
 
 This package brings some Python string formatting to Javascript! Currently you can:
@@ -5,6 +9,16 @@ This package brings some Python string formatting to Javascript! Currently you c
 - Abbreviate a string
 - Make a string sentence case
 - Make a string title case
+
+# Installation
+
+    npm install @techtronics/fstring
+
+or
+
+    yarn add @techtronics/fstring
+
+It goes hand in hand with our quality of life package [qol](https://github.com/lewisjr/qol)
 
 # Importing
 
@@ -79,6 +93,7 @@ Make any string **sentence cased**; The current sentence delimiters are:
 
 - `.`
 - `;`
+- `:`
 - `!`
 - `?`
 
@@ -99,6 +114,14 @@ It returns a string in which every first letter of the first word of a sentence 
 ## v0.1.x
 
 <details open>
+<summary><strong>v0.1.4</strong></summary>
+
+- Added colon support to `toSentenceCase`
+- Full parity with our python quality of life [qolpy](https://github.com/lewisjr/qolpy) package
+
+</details>
+
+<details>
 <summary><strong>v0.1.3</strong></summary>
 
 - Fixed missing build and type annotations

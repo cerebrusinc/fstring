@@ -20,10 +20,10 @@ export const abbreviate = (
 		case true:
 			txtArr
 				.reverse()
-				.map((name) => (initials += name.substring(0, 1).toUpperCase()));
+				.map(name => (initials += name.substring(0, 1).toUpperCase()));
 			break;
 		default:
-			txtArr.map((name) => (initials += name.substring(0, 1).toUpperCase()));
+			txtArr.map(name => (initials += name.substring(0, 1).toUpperCase()));
 	}
 
 	return initials;
@@ -61,7 +61,7 @@ export const toSentenceCase = (txt: string, delimiter?: string): string => {
 	const text = txt.toLowerCase();
 	const txtArr = text.split(delim);
 
-	const whitelist = [".", "!", "?", ";"];
+	const whitelist = [".", "!", "?", ";", ":"];
 
 	for (let i = 0; i < txtArr.length; i++) {
 		const prevStr = i === 0 ? "" : txtArr[i - 1];
