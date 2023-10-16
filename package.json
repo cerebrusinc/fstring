@@ -1,8 +1,12 @@
 {
-	"name": "@techtronics/fstring",
-	"version": "0.1.4",
+	"name": "@cerebrusinc/fstring",
+	"version": "0.1.5",
 	"description": "This brings Python string manipulation to js!",
-	"author": "Lewis Mosho Junior <mrmoshojr@gmail.com>",
+	"author": {
+		"email": "hello@cerebrus.dev",
+		"name": "Lewis Mosho Jr | Cerebrus Inc",
+		"url": "https://www.cerebrus.dev"
+	},
 	"main": "lib/index.js",
 	"types": "lib/index.d.ts",
 	"scripts": {
@@ -10,7 +14,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/lewisjr/fstring.git"
+		"url": "https://github.com/cerebrusinc/fstring.git"
 	},
 	"keywords": [
 		"abbreviate",
@@ -20,9 +24,9 @@
 	],
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/lewisjr/fstring/issues"
+		"url": "https://github.com/cerebrusinc/fstring/issues"
 	},
-	"homepage": "https://github.com/lewisjr/fstring",
+	"homepage": "https://github.com/cerebrusinc/fstring",
 	"devDependencies": {
 		"@types/node": "^18.8.3",
 		"typescript": "^4.8.4"

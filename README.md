@@ -114,6 +114,13 @@ It returns a string in which every first letter of the first word of a sentence 
 ## v0.1.x
 
 <details open>
+<summary><strong>v0.1.5</strong></summary>
+
+- Moved from [@techtronics/fstring](https://www.npmjs.com/package/@techtronics/fstring)
+
+</details>
+
+<details>
 <summary><strong>v0.1.4</strong></summary>
 
 - Added colon support to `toSentenceCase`
